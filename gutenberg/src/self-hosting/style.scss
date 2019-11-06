@@ -1,0 +1,21 @@
+.wp-block-video {
+
+	[poster] {
+		object-fit: contain;
+	}
+
+	.video-js {
+		width: 100%;
+		height: 100%;
+
+		.vjs-tech {
+			position: relative;
+		}
+	}
+
+    .vjs-no-js {
+		height: auto;
+		position: relative;
+    	top: -250px;
+	}
+}
