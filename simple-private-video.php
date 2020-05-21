@@ -11,7 +11,7 @@
  * Plugin Name:       Simple Private Video
  * Plugin URI:        https://sumapress.com/simple-private-video/
  * Description:       A video block and a simple and lean way to host your own videos and show them in private mode without external services dependencies
- * Version:           0.2.0
+ * Version:           0.2.1
  * Author:            SumaPress
  * Author URI:        https://sumapress.com/
  * License:           GPL-2.0+

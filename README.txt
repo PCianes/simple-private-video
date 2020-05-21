@@ -114,6 +114,9 @@ If they insist they will get it as with any other solution, but it has been rais
 
 == Changelog ==
 
+= 0.2.1 =
+* Fix fatal error with new version of Woo
+
 = 0.2.0 =
 * First beta publicly available version.
 

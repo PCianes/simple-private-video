@@ -13,6 +13,8 @@ class Gutenberg {
 	 */
 	public function change_media_upload_folder_on_private_files( $data ) {
 
+		include_once( ABSPATH . 'wp-includes/pluggable.php' );
+
 		if ( ! current_user_can( 'upload_files' ) ) {
 			return $data;
 		}
