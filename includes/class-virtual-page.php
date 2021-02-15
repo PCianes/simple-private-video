@@ -25,7 +25,7 @@ class Virtual_Page {
 	public function create_custom_rewrite_rules( $wp_rewrite ) {
 
 		$wp_rewrite->rules = array_merge(
-			[ 'video-src/([^/]*)/(\d+)/?$' => 'index.php?spv-token=$matches[1]&spv-video=$matches[2]' ],
+			[ '^video-src/([^/]*)/(\d+)' => 'index.php?spv-token=$matches[1]&spv-video=$matches[2]' ],
 			$wp_rewrite->rules
 		);
 	}

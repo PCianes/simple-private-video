@@ -16,7 +16,7 @@
 
 			var videoID = this.id.replace('video-', '');
 
-			if( 'undefined' != videoID && this.className.indexOf('video-js') > -1 ) {
+			if( 'undefined' != videoID && this.className.indexOf('vjs-tech') > -1 ) { // was --> video-js
 
 				videoIds.push( videoID );
 
@@ -53,11 +53,11 @@
 			}
 
 		})
-		.bind( 'contextmenu', function() {
+		.on( 'contextmenu', function() {
 			return false;
 		});
 
-		$('body').mouseleave( function(){
+		$('body').on('mouseleave', function(){
 			setTimeout( function() {
 				loadVideo('delete');
 			}, 1000 );
