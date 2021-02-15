@@ -112,9 +112,9 @@ class Gutenberg {
 	 */
 	private function register_video_assets( $assets_video_key ) {
 
-		wp_register_style( $assets_video_key, plugin_dir_url( dirname( __FILE__ ) ) . 'assets/css/video-js.min.css', [], '7.6.5', 'all' );
+		wp_register_style( $assets_video_key, plugin_dir_url( dirname( __FILE__ ) ) . 'assets/css/video-js.min.css', [], '7.11.4', 'all' );
 
-		wp_register_script( $assets_video_key, plugin_dir_url( dirname( __FILE__ ) ) . 'assets/js/video.min.js', [ 'jquery' ], '7.6.5', true );
+		wp_register_script( $assets_video_key, plugin_dir_url( dirname( __FILE__ ) ) . 'assets/js/video.min.js', [ 'jquery' ], '7.11.4', true );
 	}
 
 	/**
@@ -126,9 +126,9 @@ class Gutenberg {
 
 		wp_register_script(
 			$plugin_name,
-			plugin_dir_url( dirname( __FILE__ ) ) . 'assets/js/web.min.js',
+			plugin_dir_url( dirname( __FILE__ ) ) . 'assets/js/web.js',
 			[ 'jquery', $assets_video_key ],
-			filemtime( plugin_dir_path( dirname( __FILE__ ) ) . 'assets/js/web.min.js' ),
+			filemtime( plugin_dir_path( dirname( __FILE__ ) ) . 'assets/js/web.js' ),
 			true
 		);
 
